@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f0f4f8; /* Fallback color */
+    background: linear-gradient(to right, #f0f4f8, #c9d6df); /* Gradient background */
+    color: #333;
+}
+
+/* Navigation Bar Styles */
+header {
+    background: #352f44; /* Changed from #00796b to #ffdf00 */
+    color: white;
+    padding: 20px 0; /* Increased padding for larger size */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 30px; /* Increased margin for better spacing */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Increased font size */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffdf00; /* Highlight color on hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 20px 50px;
+    text-align: center;
+    background: white; /* Fallback background color */
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f4f8 100%); /* Gradient background */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px; /* Added bottom margin for spacing */
+    font-size: 20px; /* Increased font size for better readability */
+    line-height: 1.8; /* Adjusted line height for better readability */
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+    width: 400px; /* Adjust width to 2x */
+    height: 400px; /* Adjust height to 2x */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(to right, #696969, #696969); /* Changed from #ff7e5f, #feb47b to #696969 */
+    color: white;
+    padding-bottom: 150px; /* Adjust padding for gradient visibility */
+    position: relative; /* Ensure content is above gradient */
+}
+
+.home .content {
+    margin-top: 100px;
+    position: relative; /* Ensure content is above gradient */
+    z-index: 1; /* Ensure content is above gradient */
+}
+
+.home h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.home p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.home img {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 480px; /* Increased size by 20% */
+    height: 480px; /* Increased size by 20% */
+    object-fit: cover;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    margin: 10px 20px;
+    font-size: 18px;
+    background: #352f44; /* Changed from #00796b to #ffdf00 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .project {
+    background: #f0f4f8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Contact Section */
+.contact a {
+    color: #352f44; /* Changed from #00796b to #ffdf00 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #696969; /* Changed from #ff7e5f to #696969 */
+}
+
+/* Footer Section */
+footer {
+    background: #352f44; /* Changed from #00796b to #ffdf00 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Adjusted for vertical alignment */
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home p {
+        font-size: 18px;
+    }
+
+    .skills ul {
+        flex-direction: column;
+    }
+
+    .skills ul li {
+        margin: 10px 0;
+    }
+
+    .projects .project {
+        text-align: center;
+    }
+}
